@@ -6,7 +6,7 @@ ENV APP_ROOT /go/src/app
 ENV GO111MODULE=on
 
 WORKDIR ${APP_ROOT}
-COPY . .
+COPY ./src .
 
 RUN apk update \
     && apk add --no-cache git \
